@@ -1,0 +1,10 @@
+{
+    "products": [ 
+        {"code": "1234", "sold":0, "delivred": 0 , "product": "BMW"},
+        {"code": "1324", "sold":0, "delivred": 0, "product": "BENZ"},
+        {"code": "2134", "sold":0, "delivred": 0, "product": "GOLF"},
+        {"code": "1243", "sold":0, "delivred": 0, "product": "VOLVO"},
+        {"code": "1124", "sold":0, "delivred": 0, "product": "SAB"},
+        {"code": "1134", "sold":0, "delivred": 0, "product": "PEUGEOT"}
+    ] 
+}

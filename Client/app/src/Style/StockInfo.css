@@ -1,0 +1,29 @@
+.stock-info-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 15vh
+}
+.stock-cards {
+    margin-top: 10vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 8vh 2vh 2vh 2vh;
+    border-radius: 1vh;
+    height: 47vh;
+}
+.card-image img {
+    width: 38vh;
+    height: 23vh;
+    margin: 2vh 2vh 0;
+}
+.card-info p:first-child {
+    text-align: center;
+    font-size: 2.5vh;
+    margin-top: 1vh;
+}
+.card-info p:not(:first-child) {
+    margin-left: 2vh;
+    margin-left: 2vh;
+    font-size: 2vh;
+    margin-top: -1vh;
+}
