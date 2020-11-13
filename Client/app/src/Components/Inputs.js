@@ -1,11 +1,10 @@
 import React, { useReducer } from 'react';
 import Stock from './Stock';
 import Switch from './Switch'
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import '../Style/Inputs.css';
 
 const Inputs = () => {
-  const s = useSelector((state => state.switchReducer));
   const [ product, setProduct ] = useReducer(
     (state, newState) => ({...state, ...newState}),
     {
@@ -27,7 +26,6 @@ const submitProduct = () => {
     setProduct({["status"]: '', ["code"]: ''})
   }
 }
-  console.log(s)
   return(
     <div className="inputs-wrapper">
       <Switch />
@@ -38,7 +36,8 @@ const submitProduct = () => {
       <div className="button">
         <input type="submit" value="Submit" onClick={submitProduct}/>
       </div>
-      <Stock /> 
+       <Stock />
+       
     </div>
   )
 }
