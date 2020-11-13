@@ -5,6 +5,30 @@
         {"code": "2134", "sold":0, "delivred": 0, "product": "GOLF"},
         {"code": "1243", "sold":0, "delivred": 0, "product": "VOLVO"},
         {"code": "1124", "sold":0, "delivred": 0, "product": "SAB"},
-        {"code": "1134", "sold":0, "delivred": 0, "product": "PEUGEOT"}
-    ] 
+        {"code": "1134", "sold":0, "delivred": 0, "product": "PEUGEOT"}        
+    ],
+    "packages": [
+        {"code": "1111", 
+            "packages":
+            [
+                {"package": 1, "sold":0, "delivred": 0, "products": [{"code": "1324"}, {"code": "1134"}]},
+                {"package": 2, "sold":0, "delivred": 0, "products": [{"code": "1324"}, {"code": "1234"}]}
+            ]
+        },
+        {"code": "2222", 
+            "packages":
+            [
+                {"package": 1, "sold":0, "delivred": 0, "products": [{"code": "2134"}, {"code": "1124"}]},
+                {"package": 2, "sold":0, "delivred": 0, "products": [{"code": "1243"}, {"code": "2134"}]}
+            ]
+        },
+       
+        {"code": "3333",
+            "packages":
+            [
+                {"package": 1, "sold":0, "delivred": 0, "products": [{"code": "1234"}, {"code": "1124"}]},
+                {"package": 2, "sold":0, "delivred": 0, "products": [{"code": "1243"}, {"code": "1124"}]}
+            ]
+        }
+    ]
 }

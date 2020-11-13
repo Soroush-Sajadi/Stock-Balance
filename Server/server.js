@@ -2,7 +2,8 @@ const express = require('express');
 const app = express();
 const cors = require('cors')
 const bodyParser = require('body-parser');
-const { main } = require('./Helper_Functions/main')
+const { main } = require('./Helper_Functions/main');
+const { packageIdentifier } = require('./Helper_Functions/packageIdentifier')
 const PORT = process.env.PORT || 5000;
 
 app.use(cors());
@@ -14,6 +15,8 @@ app.get('/stock/a/:status/:code/:switcher', (req, res) => {
   const code = req.params.code;
   const switcher = req.params.switcher;
   const result = main(status, code, switcher);
+  const test = packageIdentifier(status, code)
+  console.log(result)
   res.json(result)
 })
 

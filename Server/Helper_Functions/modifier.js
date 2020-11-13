@@ -1,7 +1,6 @@
 const db = require('../DB.json');
 const { regex } = require('./regex');
 
-
 const modifier = (string, code, boolean) => {
     const reg = regex(string);
     if (reg.message) {

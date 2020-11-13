@@ -2,7 +2,7 @@ const regex = (string) => {
     if (!/^\d+/.test(string)) {
         return {quantity: 1, status: string}
     }
-    if (!/[a-z]+/.test(string)) {
+    if (!/[a-z A-Z]+/.test(string)) {
         return {message: 'You Did Not Choose Any Status, Try L, I Or S'}
     }
     const regexQunatity = /[0-9]+/
