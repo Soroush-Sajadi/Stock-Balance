@@ -15,8 +15,6 @@ app.get('/stock/a/:status/:code/:switcher', (req, res) => {
   const code = req.params.code;
   const switcher = req.params.switcher;
   const result = main(status, code, switcher);
-  const test = packageIdentifier(status, code)
-  console.log(result)
   res.json(result)
 })
 

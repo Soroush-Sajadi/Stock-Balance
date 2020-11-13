@@ -3,6 +3,9 @@ const { packageModifier } = require('./packageModifier')
 
 const packageIdentifier  = (string, code) => {
     const reg = regex(string);
+    if (reg.message) {
+        return [reg]
+    }
     if (reg.status.split('').length === 2) {
         if((reg.status.split('')[1]).toLowerCase() === 'p') {
             const packageNumber = string.match(/\d+$/)[0]

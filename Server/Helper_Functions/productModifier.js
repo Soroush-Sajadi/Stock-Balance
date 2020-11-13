@@ -1,6 +1,6 @@
 const db = require('../DB.json');
 
-const productModifier = (quantity, status, array) => {
+const productModifier = (quantity, status, array, packageNumber) => {
     for (let i = 0, packageslen = array.length; i < packageslen; i += 1) {
         for(let j = 0, productsLen = db.products.length; j < productsLen; j += 1 ) {
             if (array[i].code === db.products[j].code) {
@@ -12,7 +12,7 @@ const productModifier = (quantity, status, array) => {
             }
         }
     }
-    return [{message: 'Data Is Saved'}];
+    return [{message: quantity === "s" ? ' Package Is Sold ': 'Package Is Delivred'}];
 }
 
 
